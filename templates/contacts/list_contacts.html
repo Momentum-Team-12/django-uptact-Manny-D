@@ -35,10 +35,7 @@
     </div>
     {% endif %}
 
-    <h2>{{ contact.birthday }}</h2>
-
-    <!-- <h2>{{ contact.note }}</h2>
-    <h2>{{ contact.created_on }}</h2> -->
+    <h3>DOB: {{ contact.birthday }}</h3>
 
     <p>
       <a href="{% url 'edit_contact' pk=contact.pk %}">Edit Contact</a><br>    

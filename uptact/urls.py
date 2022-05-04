@@ -1,5 +1,4 @@
 """uptact URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.0/topics/http/urls/
 Examples:
@@ -28,9 +27,8 @@ urlpatterns = [
     path('contacts/<int:pk>/delete/',
          contacts_views.delete_contact,
          name='delete_contact'),
-    path('contacts/<int:pk>/', 
-         contacts_views.notes_contact,
-         name="note_contact"),
+    path('contacts/<int:pk>/', contacts_views.notes_contact,
+         name='notes_contact'),
 ]
 
 if settings.DEBUG:
